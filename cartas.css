@@ -1,0 +1,57 @@
+.cont_total{
+    display: flex;
+}
+
+.contenedor {
+    height:250px;
+    width: 250px;
+   -webkit-perspective:800;
+   box-shadow: 0px opx 5px black;
+   perspective: 800;
+}
+.carta {
+    
+    width: 200px;
+    height: 250px;
+    margin-top:-30px;
+    position: relative;
+    transition: all ease .5s;
+    transform-style: preserve-3d;
+
+    transform: perspective(600px) rotateY(0deg);
+
+
+}
+.carta:hover {
+    transform: rotateY(180deg);
+
+
+}
+
+.lado {
+    width:100%;
+    height: 95%;
+    backface-visibility: hidden;
+    position:absolute;
+}
+.frente {
+    background="imagen/fonFar122.jpg";
+   
+
+}
+.atras {
+
+    background="imagen/car2.jpg";
+    transform: rotateY(180deg);*
+  
+}
+
+
+img {
+    width: 100%;
+   height: 100%; 
+
+}
+
+  
+  
